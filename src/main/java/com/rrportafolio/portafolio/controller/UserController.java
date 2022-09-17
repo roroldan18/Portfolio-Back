@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController 
 @RequestMapping("/users")
-@CrossOrigin("*")
+@CrossOrigin("https://portfolio-9d3d4.web.app")
 public class UserController {
     @Autowired
     private IUserService interUserService;

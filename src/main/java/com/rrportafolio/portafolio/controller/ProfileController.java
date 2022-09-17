@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/profile")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin("https://portfolio-9d3d4.web.app")
 public class ProfileController {
     @Autowired
     private UserService userService;

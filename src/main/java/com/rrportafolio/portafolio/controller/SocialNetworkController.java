@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/socialnetwork")
-@CrossOrigin("*")
+@CrossOrigin("https://portfolio-9d3d4.web.app")
 public class SocialNetworkController {
     @Autowired
     private UserService userService;
