@@ -12,6 +12,9 @@
             <properties>
                 <exec.args>-classpath %classpath com.rrportafolio.portafolio.PortafolioApplication</exec.args>
                 <exec.executable>java</exec.executable>
+                <Env.DATABASE_URL>jdbc:mysql://u38kppn10tysqjcw:jXbW3e0yvwJFCsenEQBQ@blrmm3uwjkyjcv8n8hbu-mysql.services.clever-cloud.com:3306/blrmm3uwjkyjcv8n8hbu</Env.DATABASE_URL>
+                <Env.DATABASE_USERNAME>u38kppn10tysqjcw</Env.DATABASE_USERNAME>
+                <Env.DATABASE_PASSWORD>jXbW3e0yvwJFCsenEQBQ</Env.DATABASE_PASSWORD>
             </properties>
         </action>
         <action>
@@ -41,6 +44,21 @@
             <properties>
                 <exec.args>-classpath %classpath com.rrportafolio.portafolio.PortafolioApplication</exec.args>
                 <exec.executable>java</exec.executable>
+            </properties>
+        </action>
+        <action>
+            <actionName>rebuild</actionName>
+            <packagings>
+                <packaging>*</packaging>
+            </packagings>
+            <goals>
+                <goal>clean</goal>
+                <goal>install</goal>
+            </goals>
+            <properties>
+                <Env.DATABASE_URL>jdbc:mysql://u38kppn10tysqjcw:jXbW3e0yvwJFCsenEQBQ@blrmm3uwjkyjcv8n8hbu-mysql.services.clever-cloud.com:3306/blrmm3uwjkyjcv8n8hbu</Env.DATABASE_URL>
+                <Env.DATABASE_USERNAME>u38kppn10tysqjcw</Env.DATABASE_USERNAME>
+                <Env.DATABASE_PASSWORD>jXbW3e0yvwJFCsenEQBQ</Env.DATABASE_PASSWORD>
             </properties>
         </action>
     </actions>
